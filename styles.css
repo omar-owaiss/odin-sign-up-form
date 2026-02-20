@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+}
+
+.left-section {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    width: 33vw;
+    height: 55vw;
+    text-align: center;
+}
+
+div .logo {
+    width: 25%;
+}
+
+.logo-container {
+    background-color: #00000065;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+}
+.logo-container p {
+    color: aliceblue;
+    font-family: 'Amatic SC', handwriting;
+    font-size: 5em;
+    align-self: center;
+}
