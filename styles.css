@@ -89,11 +89,11 @@ input {
 button {
     padding: 10px 40px;
     border-radius: 5px;
-    border: 0;
     background-color: hsl(33, 100%, 75%);
     box-sizing: border-box;
     margin-bottom: 25px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
+    border: 2px solid transparent;
 }
 
 button:hover {
@@ -101,7 +101,7 @@ button:hover {
 }
 
 button:focus {
-    border: 2px solid hsl(33, 100%, 65%);
+    border-color: hsl(33, 100%, 65%);
 }
 
 button:active {
