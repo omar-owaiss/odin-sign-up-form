@@ -5,6 +5,7 @@
 }
 body {
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -12,7 +13,8 @@ a {
     color: hsl(33, 100%, 45%);
 }
 h1 {
-    font-size: 1.5em;
+    font-size: 1.25em;
+    margin-bottom: 1em;
 }
 
 .left-section {
@@ -64,20 +66,23 @@ div .logo {
 }
 
 .header-section, .footer-section, .form-section {
-    height: 18.2vw;
+    height: 18vw;
     padding: 2em;
 }
 
-
-input, label {
-    padding: 0.2em;
-    margin: 0.8em;
+label {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 2px;
 }
 
 input {
     appearance: none;
-    border: 1px solid #E5E7EB;
+    border: 1px solid hsl(220, 13%, 91%);
     border-radius: 3px;
+    width: 150%;
+    padding: 0.4em;
+    margin-bottom: 2em;
 }
 
 
@@ -111,11 +116,21 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1em 2em 1em 2em;
 }
 
 form {
     display: flex;
+    justify-content: start;
+    gap: 25%;
 }
-label {
-    display: block;
+
+
+input:focus {
+    outline: none;
+    border-color: rgb(175, 177, 181);
+}
+
+input:invalid {
+    border-color: red;
 }
