@@ -7,14 +7,23 @@ body {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    color: hsl(33, 100%, 45%);
+}
+h1 {
+    font-size: 1.5em;
+}
+
 .left-section {
     background-image: url("background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    width: 33vw;
-    height: 55vw;
+    width: 40vw;
+    height: 54.5vw;
     text-align: center;
+    flex-shrink: 0;
 }
 
 div .logo {
@@ -22,7 +31,7 @@ div .logo {
 }
 
 .logo-container {
-    background-color: #00000065;
+    background-color: #00000050;
     display: flex;
     justify-content: center;
     position: relative;
@@ -33,4 +42,80 @@ div .logo {
     font-family: 'Amatic SC', handwriting;
     font-size: 5em;
     align-self: center;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1em;
+}
+.header-section p {
+    font-size: 1.5em;
+}
+
+.header-section, .footer-section {
+    background-color: rgb(255, 228, 196);
+}
+
+.header-section, .footer-section, .form-section {
+    height: 18.2vw;
+    padding: 2em;
+}
+
+
+input, label {
+    padding: 0.2em;
+    margin: 0.8em;
+}
+
+input {
+    appearance: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+
+button {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: hsl(33, 100%, 75%);
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    background-color: hsl(33, 100%, 70%);
+}
+
+button:focus {
+    border: 2px solid hsl(33, 100%, 65%);
+}
+
+button:active {
+    background-color: hsl(33, 100%, 60%);
+}
+
+.footer-section {
+    box-shadow: inset 0px 2px 7px rgba(0, 0, 0, 0.7);
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+}
+label {
+    display: block;
 }
